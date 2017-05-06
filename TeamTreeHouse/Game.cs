@@ -25,10 +25,10 @@ namespace TeamTreeHouse
 
                 Invader[] invaders =
                 {
-                    new Invader(path),
-                    new Invader(path),
-                    new Invader(path),
-                    new Invader(path)
+                    new BasicInvader(path),
+                    new BasicInvader(path),
+                    new StrongInvader(path),
+                    new BasicInvader(path)
                 };
 
                 Tower[] towers =

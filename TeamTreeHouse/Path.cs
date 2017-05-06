@@ -57,7 +57,8 @@ namespace TeamTreeHouse
         {
             foreach (MapLocation pathLocation in _path)
             {
-                if (location.X == pathLocation.X && location.Y == pathLocation.Y)
+                //if (location.X == pathLocation.X && location.Y == pathLocation.Y)
+                if (location.Equals(pathLocation))
                 {
                     return true;
                 }

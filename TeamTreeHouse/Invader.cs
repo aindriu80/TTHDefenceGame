@@ -1,7 +1,10 @@
-﻿namespace TeamTreeHouse
+﻿using System;
+
+namespace TeamTreeHouse
 {
-    public class Invader
+    public abstract class Invader : IInvader
     {
+        public virtual string Description => "";
         private readonly Path _path;
         private int _pathStep = 0;
 
@@ -9,7 +12,7 @@
 
         public int Health { get; set; } = 2;
 
-        //True if the ivnader has reached the end of the path
+        //True if the invader has reached the end of the path
         public bool HasScored { get { return _pathStep >= _path.Length; } }
 
         public bool IsNuetralized => Health <= 0;
